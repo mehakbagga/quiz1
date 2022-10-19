@@ -1,0 +1,28 @@
+<nav class="navbar navbar-expand-lg bg-light">
+  <div class="container-fluid nav-container">
+    
+    <a class="navbar-brand" href="/clucks"><img id="logo" src="/images/c8.png" alt="logo" width="40" ></a>
+
+    <div class="nav-items-container">
+    <button class="navbar-toggler mb-2" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+      
+      <div class="navbar-nav">
+          <% if (!username) { %>
+              <button class="btn btn-success margin-needed" onclick="alert('You need to be signed in before you can Cluck.')" >Cluck!</button>
+              <button class="btn btn-success"><a href="/sign_in">Sign In</a></button> 
+              <!-- need verify if the action works for sign in button -->
+      <% } else { %>
+              <button class="btn btn-success"><a href="/clucks/new">Cluck!</a></button>
+              <button type="button" class="btn btn-link" id="username_display"><%- username %></button>
+              <form action="/sign_out" method="post">
+              <button class="btn btn-success" style="width: 100%;">Sign Out</button>
+              </form>
+      <% } %> 
+      </div>
+    </div>
+  </div>
+  </div>
+</nav>

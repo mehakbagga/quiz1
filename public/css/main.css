@@ -1,0 +1,151 @@
+.thumbnail {
+    border-radius: 10%;
+    overflow: hidden;
+    width: 2em;
+    height: 2em;
+    display:inline-block;
+    vertical-align:middle;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 1em;
+    margin-top: 0.3em;
+    min-width: 2em;
+}
+
+.thumbnail_img {
+    max-height: 180%;
+}
+
+.card {
+    overflow: hidden;
+    width: 60%;
+    box-sizing: border-box;
+}
+
+.posts-column {
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.cluck_image {
+    max-width: 95%;
+    height: auto;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+a:hover{
+    color: white;
+}
+
+.btn-link {
+    text-decoration: none;
+    color: gray;
+}
+
+.btn-link:hover{
+    color:gray;
+}
+
+.btn-link{
+    color:gray !important;
+}
+
+.btn-success {
+    background-color: rgb(229, 146, 193);
+    border-color: rgb(229, 146, 193);
+}
+
+.btn-success:hover {
+    background-color: rgb(225, 88, 165);
+    border-color: rgb(225, 88, 165);
+}
+
+.btn-primary {
+    background-color: rgb(195, 178, 241);
+    border-color: rgb(195, 178, 241);
+}
+
+.btn-primary:hover {
+    background-color: rgb(163, 136, 238);
+    border-color: rgb(163, 136, 238);
+}
+
+.nav-container {
+    display: flex;
+    justify-content: space-between;
+}
+
+label {
+    color: gray;
+}
+
+::placeholder {
+    color: rgb(182, 182, 182) !important;
+}
+
+.button-container {
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+.page-container {
+    margin: 1em 2em;
+}
+
+.margin-needed {
+    margin-right: 1em;
+}
+
+.post-container {
+    display: flex;
+    color: gray;
+}
+
+.card-title {
+    font-weight: bold;
+}
+
+.index-page-container {
+    margin: 1em 2em;
+    display: flex;
+}
+
+.trending-column {
+    margin-right: 2em;
+    width: 20%;
+}
+
+.new-form {
+    width: 50%;
+}
+
+@media (max-width: 1000px) {
+    .card {
+        width: 90%;
+    }
+
+    .new-form {
+        width: 80%;
+    }
+}
+
+@media (max-width: 700px) {
+    .card {
+        width: 100%;
+    }
+
+    .new-form {
+        width: 100%;
+    }
+}
+
+@media (max-width: 700px) {
+    .trending-column {
+        display: none;
+    }
+}

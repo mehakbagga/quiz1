@@ -1,0 +1,38 @@
+<%- include('../partials/header') %> 
+    <div class="index-page-container">
+    <% if (hashtags.length > 0) { %>
+        <div class="trending-column">
+            <h5>Trending Clucks</h5>
+            <ul class="list-group">
+            <% for( let hashtag of hashtags ) { %>
+                    <li class="list-group-item"><%- hashtag.name %> • <%- hashtag.count %></li>
+            <% } %>
+            </ul>
+        </div>
+    <% } %>
+    <div class="posts-column">
+        <% for( let cluck of clucks ) { %>
+            <% const currentTime = new Date(); %> 
+            <% const relativeTime = timeDifference(currentTime, cluck.created_at) %> 
+            
+            <div class="card mb-3">
+                <div class="card-body post-container">
+                
+                <div class="thumbnail">
+                <img src="/images/chicken6.jpeg" alt="avatar image" class="thumbnail_img" style="width: 180%;">
+                </div>
+                <div class="text-img">
+                <span class="card-title"><%- cluck.username %> • </span>
+                <span class="card-title"><%- relativeTime %></span>
+                <p class="card-text"><%- cluck.content %></p>
+                
+                <% if (cluck.image_url) { %>
+                        <img src="<%- cluck.image_url%> " alt="cluck image" style="width: 30em" class="cluck_image">
+                <% } %>
+                </div>
+                </div>
+            </div>
+        <% } %>
+    </div>
+</div>
+<%- include('../partials/footer') %> 

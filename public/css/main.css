@@ -56,18 +56,18 @@ a:hover{
 }
 
 .btn-success {
-    background-color: rgb(229, 146, 193);
-    border-color: rgb(229, 146, 193);
+    background-color: rgb(229, 146, 150);
+    border-color: rgb(229, 146, 157);
 }
 
 .btn-success:hover {
-    background-color: rgb(225, 88, 165);
-    border-color: rgb(225, 88, 165);
+    background-color: rgb(225, 88, 106);
+    border-color: rgb(225, 88, 106);
 }
 
 .btn-primary {
-    background-color: rgb(195, 178, 241);
-    border-color: rgb(195, 178, 241);
+    background-color: rgb(178, 234, 241);
+    border-color: rgb(178, 234, 241);
 }
 
 .btn-primary:hover {

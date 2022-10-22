@@ -1,0 +1,21 @@
+<%- include('../partials/header') %> 
+<div class="page-container">
+<% if (username) { %>
+    <form action="/clucks" method="post" class="new-form">
+        <div class="mb-3">
+            <label for="content" class="form-label">Content</label>
+            <textarea name="content" id="content" class="form-control"rows="5" placeholder="Whatchoo clukin' about?"></textarea>
+        </div>
+        <div class="mb-3">
+            <label for="image_url" class="form-label">Image Url</label>
+            <input type="text" id="image_url" name="image_url" placeholder="http://i.imgur.com/qM6KaEy.gifv" class="form-control">
+        </div>
+        <div class="button-container">
+        <button class="btn btn-primary">Cluck!</button>
+        </div>
+    </form>
+<% } else { %>
+        <h1>To create a new cluck, you need to sign in first.</h1>
+<% } %>  
+</div>
+<%- include('../partials/footer') %> 
